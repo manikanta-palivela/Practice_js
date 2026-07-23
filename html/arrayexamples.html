@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Document</title>
+</head>
+<body>
+    <script>
+////  find biggest number in array //////
+        /*const arr1=[1,5,7,8];
+        const arr2=[9,12,5,3];
+        const arr3=Math.max(...arr1,...arr2);
+        console.log(arr3);*/
+
+/// find even, odd numbers in array///
+    /* const arr=[1,2,3,4,5,6,7,8,9];
+     const even=arr.filter( (num)=>num%2===0)
+         console.log(even);
+
+          const odd=arr.filter( (num)=>num%2!==0)
+         console.log(odd);*/
+
+/// find common elements in two arrays///
+         
+/* const arr1=[1,2,3,4,5];
+ const arr2=[1,1,2,3,8,9];
+ // use filter, incudes//
+ const common=arr1.filter(item=> arr2.includes(item));
+ console.log(common); 
+
+ // use set//
+  const set2=new Set(arr2);
+  const common1=arr1.filter(item => set2.has(item))
+ console.log(common1);*/
+  
+ ////  sum of two array elements stored in new array ////
+   
+ /*const arr1=[5,8,9];
+ const arr2=[4,6,7];
+
+ const sumarray=[];
+
+  for(let i=0;i<arr1.length;i++)
+
+  for(let j=0;j<arr2.length;j++)
+
+    sumarray.push(arr1[i]+arr2[j])
+  console.log(sumarray);*/
+
+
+
+  const arr1 = [1, 4, 6];
+  const arr2 = [4, 2, 3];
+ 
+let mindif=Infinity;
+let pair=[];
+
+for(let i=0;i<arr1.length;i++){
+    for(let j=0; j<arr2.length; j++) {
+    const diff=Math.abs(arr1[i]-arr2[j]);
+     
+   if(diff < mindif)
+   {
+   mindif=diff;
+   pair=[arr1[i],arr2[j]]
+}
+}
+}
+console.log("Minimum Difference:", mindif);
+console.log("Pair:", pair);
+    </script>
+</body>
+</html>

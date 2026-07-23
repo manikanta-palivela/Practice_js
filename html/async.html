@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <title>Asynch Function</title>
+</head>
+<body>
+    <script>
+         
+        /* let a=10,b=20;
+          const result =a+b;
+          console.log(result)*/
+
+        /*  setTimeout(()=>{
+            console.log("hello")
+          },2000)
+
+      console.log("hii mani")*/
+
+      function Preparefood(next){
+        setTimeout(()=>{
+            console.log("food is Prepared");
+            next();
+        },3000)
+      }
+
+
+        function foodiseaten(next){
+        setTimeout(()=>{
+            console.log("food is eaten");
+             next();
+        },2000)
+      }
+
+      
+        function gotoschool(){
+        setTimeout(()=>{
+            console.log("went to school");
+        },1500)
+      }
+ Preparefood(()=>{
+ foodiseaten(()=>{
+  gotoschool();
+});
+ });
+  
+    </script>
+    
+</body>
+</html>

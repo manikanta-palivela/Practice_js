@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="" class="btn"> click</button>
+    <script>
+
+         const event1=()=>{
+             console.log("hello")
+         }
+
+  const element=document.body.querySelector('.btn');
+
+  element.addEventListener('click',event1)
+
+  element.removeEventListener('click',event1)
+ 
+  element.addEventListener('click',()=>{
+    console.log("hello1")
+  })
+
+ 
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+     <script> 
+
+       /* array.forEach( 
+        function (i,index){
+          console.log(index+'-'+i);
+        }
+    )*/
+/*const arr=[]
+  for(let i=0 ;i<array.length;i++){
+    const num=array[i]
+     arr.push(num*10)
+    
+  }
+ console.log(arr);*/
+
+
+ /*const array1=[];
+array.forEach(
+    function(i){
+      array1.push(i*10);
+    }
+)
+console.log(array1)*/
+
+/*const array1 =
+array.map(
+    function(i){
+      return i*10;
+    }
+)
+console.log(array1)
+*/ 
+
+
+/*const even=array.filter(
+    function(i){
+      return i%2===0;
+    }
+)
+console.log(even);*/
+
+const array=[1,2,3,4,5,6,7,8,9,10,20];
+
+
+       const value= array.reduce( function(total,num){
+          return total+num
+        },0)
+    console.log(value)
+     </script>
+</body>
+</html>

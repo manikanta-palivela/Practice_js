@@ -1,0 +1,80 @@
+.header{
+    display:flex;   
+ flex-direction:row; 
+ margin-top: 20px;
+ border-style:solid;
+ border-width:1px;
+ height:80px;
+
+}
+ 
+.left{
+    margin-left: 10px;
+    margin-right:10px;
+    display:flex;
+    flex-direction:row; 
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    height:30px;
+}
+.middle{ 
+    display:flex;
+    flex-direction:row; 
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    width:100%;
+    margin-right:100px;
+} 
+.input{
+    height:30px; 
+    border:1px solid gray;
+    font-size: 16px;
+    border-radius:5px;
+}
+.search{
+    height:25px;
+    border-radius:50%;
+     border-color: rgb(243, 241, 241);
+}
+.mic{
+    height:25px;
+    border-radius:50%;
+     border-color: rgb(243, 241, 241);
+}
+     
+.micbtn{
+    margin-left: 25px;
+    border-radius:50%;
+    border-color: rgb(243, 241, 241);
+}
+.right{ 
+    margin-left: 10px;
+    margin-right:10px;
+     display:flex;
+    flex-direction:row; 
+    justify-content: space-around;
+    align-items: center;
+    width:200px;
+}
+.right button{
+    border:1px solid rgb(243, 241, 241);
+    border-radius:5px;
+    background-color:  rgb(235, 222, 222);
+}
+.create{
+    height:30px; 
+     border-color: rgb(243, 241, 241); 
+}
+     
+ 
+.apps{
+    height:30px; 
+     border-color: rgb(243, 241, 241);
+} 
+.profile{
+    height:30px; 
+     border-color: rgb(243, 241, 241);
+}

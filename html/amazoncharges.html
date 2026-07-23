@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>DOM</title>
+</head>
+<body>
+    <p>amazon shipping charges </p>
+    <input class="js-input" placeholder="enter amount" onkeydown="
+    if(event.key ==='Enter')
+    {
+     amazonshipping();
+    }
+    ">
+
+    <button class="js-button" onclick="
+    amazonshipping()"> claculator</button>
+       <p class="discount"></p>
+
+    <script>
+        function amazonshipping(){
+       const inputelement= document.querySelector('.js-input');
+        let cost=Number(inputelement.value); 
+        console.log(cost)
+
+        if(cost<100){
+            cost=cost+10;
+        } 
+
+        document.querySelector('.discount').innerHTML=`${cost}/-`
+        }
+      
+      
+    </script>
+</body>
+</html>

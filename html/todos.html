@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Document</title>
+</head>
+<body> 
+
+    <p>Todo project</p>
+    <input type="text" class="js-input" placeholder="todo items" onkeydown="if(event.key==='Enter'){addtodo()}">
+    <button class="js-add" onclick="addtodo()" >add</button>
+
+    <script> 
+    myarray=[];
+      function addtodo()
+      {
+        const element= document.querySelector('.js-input')
+        const value=element.value;
+        myarray.push(value);
+        console.log(myarray);
+        element.value='';
+      }
+      
+ function keydown(key){
+if(key.value==='Enter')
+      {
+        addtodo();
+      }
+ }
+      
+    </script>
+</body>
+</html>

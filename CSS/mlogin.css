@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: aliceblue;
+   
+.main{
+ position: relative;
+}
+}
+.shape{
+    background-color: white;
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+
+}
+.background>:nth-child(1) 
+{
+background: linear-gradient(#1845ad,#23a2f6);
+position: absolute;
+top: -100px;
+left:-100px;
+}
+.background>:nth-child(2) 
+{
+background: linear-gradient(to right,#ff512f,#f09819);
+position: absolute;
+bottom: -100px;
+right: -100px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.13);
+    width:380px;
+    padding:40px;
+    height:450px; 
+    gap:25px;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+
+}
+.form label{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: -10px;
+
+}
+.form input{ 
+    padding:15px;
+    border-radius: 5px; 
+    margin-bottom: 10px;
+    font-size: 15px;
+    background-color: rgba(8,7,16,0.6);
+    border: none; 
+    color: white;
+}
+
+.form button{
+    padding:15px;
+    background-color: #23a2f6;
+    border: none;
+    transition: 1ms; 
+     transition: all 0.2s ease;
+}
+.form button:active{
+transform: scale(0.9);
+}
+.social{
+    display: flex;
+     gap:100px;
+}
+.social .google{
+    background-color: red;
+    border-radius:5px;
+    color: white;
+    padding:10px 30px;
+    border: none;
+    transition: all 0.2s ease;
+}
+.social .facebook{
+    background-color: rgb(30, 17, 148);
+    border-radius:5px;
+    color: white;
+    padding:10px 10px;
+    border: none; 
+    transition: all 0.2s ease;
+}
+.facebook:active{
+    transform: scale(0.9);
+}
+.google:active{
+    transform: scale(0.9);
+}
+h2{
+    text-align: center;
+}
